@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Mahabaleshwar Mart | Local Strawberry Farmer</title>
+
+    <meta name="description" content="Meet a strawberry farmer from Mahabaleshwar. Explore our products, farm photographs, travel guide and blog.">
+    <meta name="theme-color" content="#14392b">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mahabaleshwar Mart">
+    <meta property="og:description" content="Local flavours, strawberry farming and travel inspiration.">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!--
+        Before publishing, add your real absolute HTTPS URLs:
+        <meta property="og:url" content="https://YOUR-DOMAIN/">
+        <meta property="og:image" content="https://YOUR-DOMAIN/images/farm.jpg">
+        <link rel="canonical" href="https://YOUR-DOMAIN/">
+    -->
+
+    <link rel="icon" href="images/Logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@400;500&display=swap">
+    <link rel="stylesheet" href="style.css">
+
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="effects.js" defer></script>
+</head>
+
+<body>
+
+    <div class="announcement">🍓 Mahabaleshwar Mart — Rooted in strawberry farming</div>
+
+    <header class="header">
+
+        <a class="brand" href="#home">
+            <img src="images/Logo.jpeg" alt="Mahabaleshwar Mart" width="54" height="54">
+            <span>MAHABALESHWAR<small>MART</small></span>
+        </a>
+
+        <form id="search-form" class="header-search" role="search">
+            <label class="sr-only" for="header-search">Search products</label>
+            <input id="header-search" type="search" placeholder="Search honey, jam, syrup...">
+            <button type="submit">Search</button>
+        </form>
+
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Toggle menu">☰</button>
+
+        <nav id="navigation" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#shop">Shop</a>
+            <a href="#travel">Travel Guide</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="cart-link" href="#cart">🛒 Cart (<span id="cart-count">0</span>)</a>
+
+    </header>
+
+    <main>
+
+        <!-- ================= HOME ================= -->
+
+        <section class="page" id="home">
+
+            <div class="hero">
+
+                <div class="sun" data-speed="0.12" aria-hidden="true"></div>
+
+                <svg class="hill hill1" data-speed="0.10" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true"><path d="M0 200C200 120 380 160 560 100S900 20 1100 90 1340 130 1440 70V600H0Z" fill="#8cc774"/></svg>
+                <div class="mist m1" aria-hidden="true"></div>
+                <svg class="hill hill2" data-speed="0.06" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true"><path d="M0 160C180 80 360 120 560 70S940 10 1160 80 1360 110 1440 60V600H0Z" fill="#5aa05a"/></svg>
+                <div class="mist m2" aria-hidden="true"></div>
+                <svg class="hill hill3" data-speed="0.03" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120C220 50 420 90 640 50S1000 10 1220 70 1380 90 1440 50V600H0Z" fill="#357a48"/></svg>
+                <svg class="hill hill4" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90C260 30 480 70 720 40S1160 10 1440 60V600H0Z" fill="#1a4a30"/></svg>
+
+                <div class="berry-row" aria-hidden="true"></div>
+                <div class="hero-particles" aria-hidden="true"></div>
+
+                <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40C240 80 480 0 720 30S1200 70 1440 20V70H0Z"/></svg>
+
+                <div class="hero-content">
+                    <span class="hero-kicker">🍓 From a strawberry farm in Mahabaleshwar</span>
+                    <h1>
+                        <span class="line">Discover the flavours of</span>
+                        <span class="line">Mahabaleshwar</span>
+                        <span class="line">through our product collection.</span>
+                    </h1>
+                    <div class="actions">
+                        <a class="btn" href="#shop">Explore Products →</a>
+                        <a class="btn secondary" href="#about">Our Story</a>
+                        <a class="btn secondary" href="#travel">Travel Guide</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- QUICK LINKS -->
+
+            <div class="intro-lines">
+                <a class="intro-card" href="#about">
+                    <span class="ic" aria-hidden="true">🍓</span>
+                    <p><b>Meet the farmer</b>Meet the strawberry farmer behind Mahabaleshwar Mart.</p>
+                </a>
+                <a class="intro-card" href="#article-farmer">
+                    <span class="ic" aria-hidden="true">🌱</span>
+                    <p><b>Our journey</b>Learn how our farming journey inspired this small business.</p>
+                </a>
+                <a class="intro-card" href="#travel">
+                    <span class="ic" aria-hidden="true">🧭</span>
+                    <p><b>Travel guide</b>Explore places to visit around Mahabaleshwar.</p>
+                </a>
+                <a class="intro-card" href="#contact">
+                    <span class="ic" aria-hidden="true">🤝</span>
+                    <p><b>Say hello</b>Thank you for being part of our story and supporting our journey.</p>
+                </a>
+            </div>
+
+            <!-- SIGNATURE PRODUCT -->
+
+            <div class="section">
+                <div class="spot">
+                    <div class="spot-img">
+                        <img class="fade-img" src="images/jam2.jpeg" alt="Strawberry Jam" loading="lazy">
+                        <span class="spot-tag">Farm favourite</span>
+                    </div>
+                    <div>
+                        <p class="eyebrow">Our signature</p>
+                        <h2>Strawberry Jam, from the fruit we grow</h2>
+                        <div class="orn" style="justify-content:flex-start" aria-hidden="true">🍓</div>
+                        <p class="muted">Strawberries are where our story begins. Our jam brings the flavour of Mahabaleshwar’s strawberry season to your breakfast table.</p>
+                        <ul>
+                            <li>1 kg</li>
+                            <li>2 kg</li>
+                            <li>Enjoy on toast</li>
+                            <li>With scones or yoghurt</li>
+                        </ul>
+                        <a class="btn" href="#shop">Shop the Jam →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STATS -->
+
+            <div class="band band-dark">
+                <div class="band-inner">
+                    <div class="stats">
+                        <div class="stat"><b data-count="products">0</b><span>Products to explore</span></div>
+                        <div class="stat"><b data-count="categories">0</b><span>Categories</span></div>
+                        <div class="stat"><b data-count="places">0</b><span>Places in our travel guide</span></div>
+                        <div class="stat"><b>🍓</b><span>Rooted in Mahabaleshwar</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FARM SLIDESHOW -->
+
+            <div class="section" style="padding-bottom:30px">
+                <div class="sec-head">
+                    <p class="eyebrow">Life on our farm</p>
+                    <h2>Where it all begins</h2>
+                    <div class="orn" aria-hidden="true">🍓</div>
+                </div>
+            </div>
+
+            <div class="farm-gallery-section">
+                <div class="farm-slider" id="farm-slider" role="region" aria-label="Photographs from our farm">
+                    <div class="farm-slider-track">
+                        <img class="farm-slide is-active" src="images/farm1.jpg" alt="Our farm — photograph 1" aria-hidden="false">
+                        <img class="farm-slide" src="images/farm2.jpg" alt="Our farm — photograph 2" aria-hidden="true" loading="lazy">
+                        <img class="farm-slide" src="images/farm3.jpg" alt="Our farm — photograph 3" aria-hidden="true" loading="lazy">
+                        <img class="farm-slide" src="images/farm4.jpg" alt="Our farm — photograph 4" aria-hidden="true" loading="lazy">
+                        <img class="farm-slide" src="images/farm5.jpg" alt="Our farm — photograph 5" aria-hidden="true" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- HOME SHOP COLLECTION -->
+
+            <div class="section home-shop" style="padding-top:20px">
+                <div class="sec-head">
+                    <p class="eyebrow">Shop local flavours</p>
+                    <h2>Shop Our Products</h2>
+                    <div class="orn" aria-hidden="true">🍓</div>
+                    <p class="muted">Honey, jam, syrup, mocktails, crushes and chikki.</p>
+                    <p class="deliver-note" style="margin-top:6px">🚚 We deliver all over India</p>
+                </div>
+
+                <div id="home-products" class="product-grid"></div>
+
+                <div class="center" style="margin-top:44px">
+                    <a class="btn" href="#shop">View Full Shop →</a>
+                </div>
+            </div>
+
+            <!-- HOW TO ORDER -->
+
+            <div class="section" style="padding-top:20px">
+                <div class="sec-head">
+                    <p class="eyebrow">Simple ordering</p>
+                    <h2>How to order</h2>
+                    <div class="orn" aria-hidden="true">🍓</div>
+                </div>
+                <div class="steps">
+                    <div class="step"><h3>Choose your products</h3><p>Pick the products and sizes you like and add them to your cart.</p></div>
+                    <div class="step"><h3>Share delivery details</h3><p>Enter your address and we prepare a WhatsApp enquiry for you to send.</p></div>
+                    <div class="step"><h3>We confirm with you</h3><p>We reply to confirm availability, delivery charges and payment before anything is dispatched.</p></div>
+                </div>
+            </div>
+
+            <!-- FARMER STORY BAND -->
+
+            <div class="band band-dark">
+                <div class="band-inner">
+                    <div class="story">
+                        <img class="fade-img" src="images/farm.jpg" alt="Our strawberry farm in Mahabaleshwar" loading="lazy">
+                        <div>
+                            <p class="eyebrow" style="color:var(--blush)">A farmer’s small business</p>
+                            <h2>Made with care, shared with you</h2>
+                            <div class="orn" style="justify-content:flex-start" aria-hidden="true">🍓</div>
+                            <blockquote>Farming is an important part of our lives, and this business has given us a new way to connect with people beyond our farm.</blockquote>
+                            <div class="actions">
+                                <a class="btn gold" href="#article-farmer">Read Our Story →</a>
+                                <a class="btn secondary" href="#contact">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="page" id="about" hidden>
+            <div class="page-hero"><div class="wrap">
+                <div class="crumbs"><a href="#home">Home</a> / About Us</div>
+                <h1>About Mahabaleshwar Mart</h1>
+                <p>The story of a strawberry farmer’s small business.</p>
+            </div></div>
+            <div class="section page-body">
+                <div class="about-layout">
+                    <img class="farm-photo" src="images/farm.jpg" alt="Our strawberry farm in Mahabaleshwar">
+                    <div>
+                        <p class="eyebrow">Our story</p>
+                        <h2>A strawberry farmer’s beginning</h2>
+                        <div id="about-story"></div>
+                        <a class="btn" href="#shop">Visit Our Shop →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SHOP ================= -->
+
+        <section class="page" id="shop" hidden>
+            <div class="page-hero"><div class="wrap">
+                <div class="crumbs"><a href="#home">Home</a> / Shop</div>
+                <h1>Shop Our Products</h1>
+                <p>Honey, jam, syrup, mocktails, crushes and chikki from Mahabaleshwar.</p>
+            </div></div>
+            <div class="section page-body">
+
+                <div class="deliver-strip">
+                    <span>🚚 <b>We deliver all over India</b></span>
+                    <span>🌿 Small-batch products from Mahabaleshwar</span>
+                    <span>💳 Pay by Cash on Delivery or Google Pay</span>
+                </div>
+
+                <div id="featured-section" class="featured">
+                    <h2>🍓 Top Selling Selection</h2>
+                    <p class="muted">Store-selected featured products, not an automated sales ranking.</p>
+                    <div id="featured-products" class="product-grid"></div>
+                </div>
+
+                <div class="shop-layout">
+
+                    <aside class="filters" aria-label="Filter products">
+                        <div>
+                            <label for="shop-search">Search</label>
+                            <input id="shop-search" type="search" placeholder="Search products...">
+                        </div>
+                        <div>
+                            <span class="flabel">Categories</span>
+                            <div id="categories" class="categories"></div>
+                        </div>
+                        <div>
+                            <label for="sort-products">Sort by</label>
+                            <select id="sort-products">
+                                <option value="featured">Featured</option>
+                                <option value="low">Price: low to high</option>
+                                <option value="high">Price: high to low</option>
+                                <option value="name">Name: A to Z</option>
+                            </select>
+                        </div>
+                        <p class="filters-note">🚚 We deliver all over India</p>
+                    </aside>
+
+                    <div>
+                        <div class="shop-head">
+                            <h2>Our Collection</h2>
+                            <p id="result-count" aria-live="polite"></p>
+                        </div>
+                        <p class="muted" style="margin:0 0 6px">Tap any product to see photos, calories and details.</p>
+                        <div id="product-list" class="product-grid"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= CART ================= -->
+
+        <section class="page" id="cart" hidden>
+            <div class="page-hero"><div class="wrap">
+                <div class="crumbs"><a href="#home">Home</a> / Cart</div>
+                <h1>Your Shopping Cart</h1>
+                <p>Review your products before sending your enquiry.</p>
+            </div></div>
+            <div class="section page-body">
+                <div id="cart-items"></div>
+                <div id="cart-summary" class="summary"></div>
+                <p class="deliver-note">🚚 Free delivery over ₹1,000 · We deliver all over India</p>
+                <div class="actions">
+                    <a class="btn secondary" href="#shop">Continue Shopping</a>
+                    <a class="btn" id="checkout-link" href="#checkout">Delivery Details →</a>
+                    <button class="text-button" id="clear-cart" type="button">Clear Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CHECKOUT ================= -->
+
+        <section class="page" id="checkout" hidden>
+            <div class="page-hero"><div class="wrap">
+                <div class="crumbs"><a href="#home">Home</a> / <a href="#cart">Cart</a> / Checkout</div>
+                <h1>Checkout</h1>
+                <p>Enter your details and choose how you would like to pay.</p>
+            </div></div>
+            <div class="section page-body">
+
+                <form id="checkout-form" class="checkout-layout">
+
+                    <div class="co-main">
+
+                        <div class="co-card">
+                            <h3><span>1</span> Contact details</h3>
+                            <label for="customer-name">Full Name</label>
+                            <input id="customer-name" autocomplete="name" maxlength="100" required>
+                            <div class="two">
+                                <div>
+                                    <label for="customer-phone">Mobile Number</label>
+                                    <input id="customer-phone" type="tel" autocomplete="tel" placeholder="10-digit mobile number" required>
+                                </div>
+                                <div>
+                                    <label for="customer-email">Email (your bill is sent here)</label>
+                                    <input id="customer-email" type="email" autocomplete="email" maxlength="120" placeholder="you@example.com" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="co-card">
+                            <h3><span>2</span> Delivery address</h3>
+                            <label for="customer-address">Address</label>
+                            <textarea id="customer-address" rows="3" autocomplete="street-address" maxlength="800" required></textarea>
+                            <div class="two">
+                                <div>
+                                    <label for="customer-pin">PIN Code</label>
+                                    <input id="customer-pin" inputmode="numeric" autocomplete="postal-code" pattern="[1-9][0-9]{5}" maxlength="6" required>
+                                </div>
+                                <div>
+                                    <label for="customer-notes">Order Notes (optional)</label>
+                                    <input id="customer-notes" maxlength="400">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="co-card">
+                            <h3><span>3</span> Payment method</h3>
+                            <div class="pay-options">
+                                <label class="pay-opt active">
+                                    <input type="radio" name="pay" value="cod" checked>
+                                    <span class="pay-ic" aria-hidden="true">💵</span>
+                                    <span><b>Cash on Delivery</b><small>Pay when your order arrives</small></span>
+                                </label>
+                                <label class="pay-opt">
+                                    <input type="radio" name="pay" value="gpay">
+                                    <span class="pay-ic" aria-hidden="true">📱</span>
+                                    <span><b>Google Pay (UPI)</b><small>Scan the QR code and pay</small></span>
+                                </label>
+                            </div>
+
+                            <div id="gpay-panel" class="gpay-panel" hidden>
+                                <img id="gpay-qr" src="images/gpay-qr.png" alt="Scan to pay with Google Pay" width="190" height="190">
+                                <div>
+                                    <p>Scan this code with <b>Google Pay</b> or any UPI app and pay <b id="gpay-amount"></b>.</p>
+                                    <p class="muted">UPI ID: <b id="upi-id"></b></p>
+                                    <label for="upi-ref">UPI transaction ID</label>
+                                    <input id="upi-ref" maxlength="40" placeholder="Enter the transaction ID after paying">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <aside class="co-summary" aria-label="Order summary">
+                        <h3>Order summary</h3>
+                        <div id="co-items"></div>
+                        <div class="co-line"><span>Subtotal</span><span id="co-subtotal"></span></div>
+                        <div class="co-line"><span>Delivery</span><span id="co-delivery"></span></div>
+                        <div class="co-total"><span>Total</span><span id="co-total"></span></div>
+                        <p class="free-note" id="free-note">🚚 Free delivery over ₹1,000</p>
+                        <div class="progress" aria-hidden="true"><i id="free-bar"></i></div>
+                        <button class="btn" type="submit" id="place-order">Place Order →</button>
+                        <p id="checkout-feedback" role="status"></p>
+                        <p class="muted small">🚚 We deliver all over India. Your bill is emailed to you after checkout.</p>
+                    </aside>
+
+                </form>
+
+            </div>
+        </section>
+
+        <!-- ================= ORDER CONFIRMATION ================= -->
+
+        <section class="page" id="order" hidden>
+            <div class="page-hero"><div class="wrap">
+                <div class="crumbs"><a href="#home">Home</a> / Order</div>
+                <h1>Thank you for your order</h1>
+                <p>Your bill is below.</p>
+            </div></div>
+            <div class="section page-body">
+                <div id="order-status" class="order-status no-print" role="status"></div>
+                <div id="bill-wrap"></div>
+                <div class="actions no-print" style="margin-top:26px">
+                    <button class="btn" type="button" id="print-bill">Download / Print Bill</button>
+                    <a class="btn secondary" href="#shop">Continue Shopping</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TRAVEL ================= -->
+
+        <section class="page" id="travel" hidden>
+            <div class="page-hero"><div class="wrap">
+                <div class="crumbs"><a href="#home">Home</a> / Travel Guide</div>
+                <h1>Travel Guide</h1>
+                <p>Viewpoints, waterfalls, temples and more around Mahabaleshwar.</p>
+            </div></div>
+            <div class="section page-body">
+
+                <p class="notice">Check opening hours, fees, weather, road conditions and access locally before visiting.</p>
+
+                <label for="travel-search">Find a Destination</label>
+                <input id="travel-search" type="search" placeholder="Search a destination...">
+
+                <div id="place-list" class="place-grid"></div>
+
+            </div>
+        </section>
+
+        <!-- ================= BLOG ================= -->
+
+        <section class="page" id="blog" hidden>
+            <div class="page-hero"><div class="wrap">
+                <div class="crumbs"><a href="#home">Home</a> / Blog</div>
+                <h1>Our Blog</h1>
+                <p>Travel inspiration and the story behind Mahabaleshwar Mart.</p>
+            </div></div>
+            <div class="section page-body">
+                <div class="blog-grid">
+
+                    <article class="blog-card">
+                        <h2>26 Places to Explore Around Mahabaleshwar</h2>
+                        <p>Photographs, short descriptions and map links for your next visit.</p>
+                        <a class="btn" href="#article-places">Read Article →</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <h2>From Strawberry Farming to Mahabaleshwar Mart</h2>
+                        <p>Meet the farmer behind this business.</p>
+                        <a class="btn" href="#article-farmer">Read Article →</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TRAVEL ARTICLE ================= -->
+
+        <section class="page article" id="article-places" hidden>
+            <div class="page-hero"><div class="wrap">
+                <div class="crumbs"><a href="#home">Home</a> / <a href="#blog">Blog</a> / Places to explore</div>
+                <h1>26 Places to Explore Around Mahabaleshwar</h1>
+                <p>Use this destination list as inspiration, not a fixed itinerary.</p>
+            </div></div>
+            <div class="section page-body">
+                <a href="#blog">← Back to Blog</a>
+                <p class="notice" style="margin-top:16px">
+                    Summaries are adapted from the list supplied for this website. Current opening
+                    times and fees have not been independently verified and are omitted.
+                </p>
+                <div id="travel-article"></div>
+                <a class="btn" href="#travel">Open Travel Guide →</a>
+            </div>
+        </section>
+
+        <!-- ================= FARMER ARTICLE ================= -->
+
+        <section class="page article" id="article-farmer" hidden>
+            <div class="page-hero"><div class="wrap">
+                <div class="crumbs"><a href="#home">Home</a> / <a href="#blog">Blog</a> / Our story</div>
+                <h1>From Strawberry Farming to Mahabaleshwar Mart</h1>
+                <p>Meet the farmer behind this business.</p>
+            </div></div>
+            <div class="section page-body">
+                <a href="#blog">← Back to Blog</a>
+                <img class="farm-photo" src="images/farm.jpg" alt="Our strawberry farm" loading="lazy" style="margin:22px 0">
+                <div id="farmer-story"></div>
+                <a class="btn" href="#shop">Browse Products →</a>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="page" id="contact" hidden>
+            <div class="page-hero"><div class="wrap">
+                <div class="crumbs"><a href="#home">Home</a> / Contact</div>
+                <h1>Contact Mahabaleshwar Mart</h1>
+                <p>Product availability, delivery enquiries and support.</p>
+            </div></div>
+            <div class="section page-body">
+                <div class="contact-grid">
+                    
+<div class="contact-card">
+    <div class="ic" aria-hidden="true">📧</div>
+    <h3>Email Us</h3>
+    <h4>tusharshinde0396@gmail.com</h4>
+    <p class="muted">
+        Send us an email and we'll be happy to help.
+    </p>
+    <a class="btn"
+       href="mailto:tusharshinde0396@gmail.com?subject=Enquiry%20-%20Mahabaleshwar%20Mart" target="_blank" rel="noopener noreferrer">
+        Contact on Email →
+    </a>
+</div>
+
+                    <div class="contact-card">
+                        <div class="ic" aria-hidden="true">📍</div>
+                        <h3>Find us</h3>
+                        <p class="muted">Mahabaleshwar, Maharashtra, India</p>
+                        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Mahabaleshwar%20Maharashtra" target="_blank" rel="noopener noreferrer">Open in Google Maps →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+                <h2>🍓 Mahabaleshwar Mart</h2>
+                <p>A strawberry farmer</p>
+                <p>Shop Local. Explore More.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#shop">Shop</a>
+                <a href="#travel">Travel Guide</a>
+                <a href="#blog">Blog</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Shop Categories</h3>
+                <div id="footer-categories"></div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Information</h3>
+                <p>📍 Mahabaleshwar, Maharashtra</p>
+                <p>📦 Delivery availability confirmed on enquiry</p>
+                <button class="footer-link" type="button" data-whatsapp>WhatsApp Support →</button>
+                <a href="#contact">Contact Us →</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Legal Information</h3>
+                <button class="footer-link" type="button" data-policy="privacy">Privacy Policy →</button>
+                <button class="footer-link" type="button" data-policy="shipping">Shipping Policy →</button>
+                <button class="footer-link" type="button" data-policy="refund">Refund Policy →</button>
+                <button class="footer-link" type="button" data-policy="terms">Terms of Service →</button>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">© <span id="year"></span> Mahabaleshwar Mart. All Rights Reserved.</div>
+
+    </footer>
+
+    <dialog id="product-dialog" class="pd" aria-labelledby="pd-name">
+        <button class="pd-close" type="button" id="pd-close" aria-label="Close product details">×</button>
+        <div class="pd-grid">
+            <div class="pd-gallery">
+                <div class="pd-main"><img id="pd-main" src="" alt=""></div>
+                <div class="pd-thumbs" id="pd-thumbs"></div>
+            </div>
+            <div class="pd-info">
+                <span class="pd-cat" id="pd-cat"></span>
+                <h2 id="pd-name"></h2>
+                <p class="pd-price" id="pd-price"></p>
+                <p class="muted" id="pd-desc"></p>
+                <ul class="pd-points" id="pd-points"></ul>
+                <div class="pd-nutri" id="pd-nutri"></div>
+                <div class="pd-buy">
+                    <div>
+                        <label for="pd-size">Size</label>
+                        <select id="pd-size"></select>
+                    </div>
+                    <div>
+                        <label>Quantity</label>
+                        <div class="quantity">
+                            <button type="button" data-pdq="-1" aria-label="Decrease quantity">−</button>
+                            <span id="pd-qty">1</span>
+                            <button type="button" data-pdq="1" aria-label="Increase quantity">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn" type="button" id="pd-add" style="width:100%">Add to Cart</button>
+                <p class="pd-deliver">🚚 We deliver all over India · Free delivery over ₹1,000</p>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="legal-dialog" aria-labelledby="legal-title">
+        <h2 id="legal-title"></h2>
+        <p id="legal-content"></p>
+        <form method="dialog"><button class="btn">Close</button></form>
+    </dialog>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <button id="to-top" type="button" aria-label="Back to top">↑</button>
+
+    <button class="floating-chat" type="button" data-whatsapp aria-label="Contact on Mail">💬 Chat</button>
+
+    <noscript>Please enable JavaScript to use navigation and the shop.</noscript>
+
+</body>
+</html>
